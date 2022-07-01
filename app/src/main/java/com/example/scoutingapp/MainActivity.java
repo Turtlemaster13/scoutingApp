@@ -285,23 +285,3 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,1);//start the pop up window
     }
 }
-
-//String text = scoutName + "";
-//String.valueOf(scoutName), "",String.valueOf(robotNumber), "",String.valueOf(matchNumber), "",String.valueOf(startingPosition), "",String.valueOf(showedUp), ""
-        /*taxi, "",
-        autoLowerMissed, "",
-        autoUpperMissed, "",
-        autoLowerHit, "",
-        autoUpperHit, "",
-        //teleop
-        teleLowerMissed, "",
-        teleUpperMissed, "",
-        teleLowerHit, "",
-        teleUpperHit, "",
-        //fouls
-        totalFouls, "",
-        totalTechFouls, "",
-        //damage/disconects
-        damage, "",
-        disconects, "",
-        climbTime*/
