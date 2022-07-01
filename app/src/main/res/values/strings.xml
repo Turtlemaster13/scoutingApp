@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">scoutingApp</string>
+    <string name="pre_match">Pre-Match</string>
+    <string name="match">Match#</string>
+    <string name="robot">robot#</string>
+    <string name="scout_name">Scout Name</string>
+    <string name="todo">TODO</string>
+    <string name="upper_hub">Upper Hub</string>
+    <string name="lower_hub">Lower Hub</string>
+    <string name="taxi">Taxi</string>
+    <string name="teleop">Teleop</string>
+    <string name="score">Score</string>
+    <string name="miss">Miss</string>
+</resources>
