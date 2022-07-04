@@ -27,4 +27,7 @@ public class endpopup extends Activity {
     public void onConfirm(View view){
         Toast.makeText(this, "someone else can figure out exporting to csv",Toast.LENGTH_SHORT).show();
     }
+    public void onCancel(View view){
+        finish();
+    }// close pop up
 }

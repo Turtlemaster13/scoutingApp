@@ -31,7 +31,7 @@ public class Pop extends Activity {
         int height = displaySize.heightPixels; // create variable height with value equal to the amount of pixels in height
         getWindow().setLayout((int)(width * .8), (int)(height *.8));//set the layout height and width
         String[] dropDownOptions = new String[]{// set the drop down menu options
-                "green", "red", "white", "blue", "purple", "orange"
+                "no show", "green", "red", "white", "blue", "purple", "orange"
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dropDownOptions);// set the drop down menu to options to the list of strings we created earlier
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -45,7 +45,7 @@ public class Pop extends Activity {
         EditText robotTextBox = findViewById(R.id.robotTextBox);
         EditText matchTextBox = findViewById(R.id.matchTextBox);
         Spinner dropDownMenu = findViewById(R.id.robotPostitionDropDown);
-        CheckBox checkBox = findViewById(R.id.showedUpCheckBox);
+        //CheckBox checkBox = findViewById(R.id.showedUpCheckBox);
         scoutName = scoutTextBox.getText().toString();// get the scouts name
         try {// if there is nothing in the robot number text box set it to 0
             robotNumber = Integer.parseInt(robotTextBox.getText().toString());// get the robots number
@@ -58,7 +58,12 @@ public class Pop extends Activity {
             matchNumber = 0;
         }
         startingPosition = dropDownMenu.getSelectedItem().toString();// get the starting position
-        showedUp = checkBox.isChecked();// get if the showed up check box is checked
+        if (startingPosition == "no show"){
+            showedUp = false;
+        } else{
+            showedUp = true;
+        }
+        //showedUp = checkBox.isChecked();// get if the showed up check box is checked
 
         //put all the data we just saved into intents so we can send it back to the main page
         getIntent().putExtra("scout name", scoutName);
