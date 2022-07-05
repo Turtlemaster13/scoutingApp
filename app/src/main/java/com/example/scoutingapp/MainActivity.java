@@ -17,6 +17,9 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class MainActivity extends AppCompatActivity {
     //export variables to csv________________________________
@@ -280,6 +283,7 @@ public class MainActivity extends AppCompatActivity {
                 "shots missed in auto for lower hub: " + autoLowerMissed + "\n" +"shots missed in auto for upper hub: "+ autoUpperMissed + "\n" +"shots scored in auto for lower hub: "+ autoLowerHit + "\n" +"shots scored in auto for upper hub: "+ autoUpperHit + "\n" +
                 "shots missed in teleop for lower hub: " + teleLowerMissed + "\n" +"shots missed in teleop for upper hub: "+ teleUpperMissed + "\n" +"shots scored in teleop for lower hub: "+ teleLowerHit + "\n" +"shots scored in teleop for upper hub: "+ teleUpperHit + "\n" +
                 "total fouls: " + totalFouls + "\n" +"total tech fouls: "+ totalTechFouls + "\n" +"damage: " + damage + "\n" +"disconnects: " + disconects + "\n" + "climb time: " + climbTime;
+
         Intent intent = new Intent(MainActivity.this,endpopup.class);
         intent.putExtra("text", text);
         startActivityForResult(intent,1);//start the pop up window
