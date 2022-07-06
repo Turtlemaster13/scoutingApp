@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/endpopup.xml" value="0.39739583333333334" />
+        <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/adapter_veiw.xml" value="0.1" />
+        <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/endpopup.xml" value="0.3546325878594249" />
         <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/popupwindow.xml" value="0.25" />
+        <entry key="..\:/Users/olive/AndroidStudioProjects/scoutingApp/app/src/main/res/layout/spinner_item.xml" value="0.275" />
       </map>
     </option>
   </component>
