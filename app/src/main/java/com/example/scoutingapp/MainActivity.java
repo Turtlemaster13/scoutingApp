@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.teleop);
         //Button textPopup = findViewById(R.id.PreMatch);
         // initalize buttons then set their text
         BupperScore = findViewById(R.id.UpperHubScore); BupperScore.setText(String.valueOf(match.autoUpperHit));//
@@ -108,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
             BupperScore.setText(String.valueOf(match.autoUpperHit));
             BupperMiss.setText(String.valueOf(match.autoUpperMissed));
         }
-
     }
     // scoring buttons
     public void onScoreButtonPressed(View view){///  basicly update and add to the text of the buttons and scores// bro this function ligit 80 lines long// speget code

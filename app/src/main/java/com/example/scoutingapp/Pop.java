@@ -1,11 +1,9 @@
 package com.example.scoutingapp;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.view.View;
@@ -16,7 +14,7 @@ public class Pop extends Activity {
     MatchScore match = null;
     protected void onCreate(Bundle savedInstanceState) {// when the pop up is created
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.popupwindow);// set the content of the pop up to the pop up window xml layout file
+        setContentView(R.layout.pregame);// set the content of the pop up to the pop up window xml layout file
 
 
 
