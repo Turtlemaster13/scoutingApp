@@ -12,11 +12,7 @@ import android.view.View;
 
 public class Pop extends Activity {
     //initialize all the variables I want to export
-    /*String scoutName = "";
-    int matchNumber = 0;
-    int robotNumber = 0;
-    String startingPosition = "";
-    boolean showedUp = false;*/
+
     MatchScore match = null;
     protected void onCreate(Bundle savedInstanceState) {// when the pop up is created
         super.onCreate(savedInstanceState);
@@ -33,9 +29,10 @@ public class Pop extends Activity {
         //set popup size
         DisplayMetrics displaySize = new DisplayMetrics();// create object that can store window width and height
         getWindowManager().getDefaultDisplay().getMetrics(displaySize); // get the display width and height and assign it to the displaySize variable
-        int width = displaySize.widthPixels; //create variable width with value equal to the amount of pixels in width
-        int height = displaySize.heightPixels; // create variable height with value equal to the amount of pixels in height
-        getWindow().setLayout((int)(width * .8), (int)(height *.8));//set the layout height and width
+        //int width = displaySize.widthPixels; //create variable width with value equal to the amount of pixels in width
+        //int height = displaySize.heightPixels; // create variable height with value equal to the amount of pixels in height
+        //getWindow().setLayout((int)(width * .8), (int)(height *.8));//set the layout height and width
+
         //----------------------
         //create the dropdown window
         Spinner dropDownMenu = findViewById(R.id.robotPostitionDropDown);// create object connected to the drop down menu
